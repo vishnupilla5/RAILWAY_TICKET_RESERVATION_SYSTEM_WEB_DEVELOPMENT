@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate(){
+var a=/^[a-z]{1}\w+([._]?\w+)*@\w+([._]?\w+)*(\.\w{2,5})+$/;
+if(document.getElementById('a1').value.match(a))
+{
+}
+else
+{
+alert("you entered invlaid mail");
+}
+}
+</script>
+</head>
+<body background=train.jpg>
+<form name="myForm" method="POST" action="register.php">
+<br>
+<br>
+<h1 align=center style="color:white;background:black"> New User Signup </h1>
+<br>
+<h2 align="center" style="color:white;background:black"> Enter a Username : &nbsp <input type="text" name="user" required> </h2>
+<br>
+<h2 align="center" style="color:white;background:black"> Enter Email id : &nbsp <input type="text" name="mailid" id="a1" required> </h2>
+<br>
+<h2 align="center" style="color:white;background:black"> Enter a Password : &nbsp <input type="password" name="pwd" required> </h2>
+<br>
+<center><input type="Submit" value="Register" onClick="validate()"></center>
+</form>
+</body>
+</html>
